@@ -1,6 +1,6 @@
 class Planet extends Circle
 {
-    constructor(radius, color,  days, orbit, t = 0)
+    constructor(radius, color,  days, orbit, t = 2 * Math.PI * Math.random())
     {
         super(0, 0, radius, color);
         this.speed = 2*Math.PI/days;
